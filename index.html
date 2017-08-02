@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +17,9 @@
 <!-- Awsome font -->
     <!-- <link rel="stylesheet" href="./lib/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
@@ -51,6 +54,9 @@
                     <a href="#about">About</a>
                 </li>
                 <li class="page-scroll">
+                    <a href="#education">Education</a>
+                </li>
+                <li class="page-scroll">
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
@@ -77,7 +83,7 @@
 
 <!-- portfolio -->
 <section id="portfolio">
-    <div class="container">
+<div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2>Portfolio</h2>
@@ -85,7 +91,99 @@
             </div>
         </div>
 
+    <carousel>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators color" >
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+            </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+
+            <div class="item active">
+                <a href="#portfolioModal-1" class="portfolio-link" data-toggle="modal">
+                    <img src="./images/map.png" alt="map" class="center_img image">
+                </a>
+            <!--<div class="carousel-caption">
+                    <p class="color">DFW SIGHTS & LANDMARKS</p>
+                </div> -->
+                <div class="overlay center_img">
+                    <a href="#portfolioModal-1" class="portfolio-link" data-toggle="modal">
+                        <div class="text">Please Click Here For More Info On <b>The DFW Sights & Landmarks</b> Project</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="item">
+                <a href="#portfolioModal-2" class="portfolio-link" data-toggle="modal">
+                    <img src="./images/restaurant.png" alt="restaurant" class="center_img">
+                </a>
+                <div class="overlay center_img">
+                    <a href="#portfolioModal-2" class="portfolio-link" data-toggle="modal">
+                        <div class="text">Please Click Here For More Info On <b>The Restaurants Menu</b> Project</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="item">
+                <a href="#portfolioModal-3" class="portfolio-link" data-toggle="modal">
+                     <img src="./images/multiUserBlog.png" alt="multiUserBlog" class="center_img">
+                </a>
+                <div class="overlay center_img">
+                    <a href="#portfolioModal-3" class="portfolio-link" data-toggle="modal">
+                         <div class="text">Please Click Here For More Info On <b>The Multi User Blog</b> Project</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="item">
+                <a href="#portfolioModal-4" class="portfolio-link" data-toggle="modal">
+                    <img src="./images/Smart_car.jpg" alt="Smart_car" class="center_img">
+                </a>
+                <div class="overlay center_img">
+                    <a href="#portfolioModal-5" class="portfolio-link" data-toggle="modal">
+                        <div class="text">Please Click Here For More Info On <b>The Smart Car</b> Project</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="item">
+                <a href="#portfolioModal-5" class="portfolio-link" data-toggle="modal">
+                    <img src="./images/wattmeter.png" alt="wattmeter" class="center_img">
+                </a>
+                <div class="overlay center_img">
+                    <a href="#portfolioModal-6" class="portfolio-link" data-toggle="modal">
+                        <div class="text">Please Click Here For More Info On <b>The Wattmeter</b> Project</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    </carousel>
+    <br>
+</div>
+
+
+    <div class="container">
         <div class="row">
+        <h3>Projects</h3>
 
             <!-- Project map -->
             <div class="col-sm-4 portfolio-item">
@@ -126,7 +224,7 @@
 
             <!-- Smart Car Project -->
             <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal-6" class="portfolio-link" data-toggle="modal">
+                <a href="#portfolioModal-4" class="portfolio-link" data-toggle="modal">
                     <div class="caption">
                         <div class="caption-content">
                         <i class="fa fa-search-plus fa-3x"></i>
@@ -168,7 +266,7 @@
             </div>
             <div class="col-lg-4 text-center">
                 <p>My name is Noah Shmais and I am a Software and Electrical Engineer.
-                I got a Bachelor degree in Electrical Engineering from UTA, then I discovered my passion for Web Developement and decided complete the Full Stack Web Development Nanodegree from Udacity. </p>
+                I got a Bachelor degree in Electrical Engineering from UTA, then I discovered my passion for Web Developement and decided complete the Full Stack Web Development Nanodegree from Udacity.</p>
                 <p>Technology and sports are what I'm all about. I hope you feel inspired while checking my projects. Feel free to get in touch with me if you have any questions!</p>
                 <p>Please check the links below to download my Resume or sent me an Email. Looking forward to communicate with you</p>
             </div>
@@ -237,13 +335,21 @@
 </section>
 
 <!-- White Section -->
-<section class="container" id="contact">
-    <h3>Education</h3><br>
+<section class="container" id="education">
+
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2>Education</h2>
+            <hr class="star-primary">
+        </div>
+    </div>
+
     <p>
     • Udacity - Full Stack Web Developer Nanodegree 2017 <br>
     • University of Texas at Arlington - Electrical Engineering (BSEE) 2016 <br>
     </p>
 </section>
+
 
 <!-- Footer Section -->
 <footer class="text-center">
@@ -441,7 +547,7 @@ The users will be allowed to register (Sign up) and create a username and passwo
 
 
 <!-- Smart Car Project -->
-<div class="portfolio-modal modal fade" id="portfolioModal-6" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="portfolioModal-4" tabindex="-1" role="dialog" aria-hidden="true">
 <div class="modal-content">
 <div class="close-modal" data-dismiss="modal">
 <div class="lr">
@@ -531,6 +637,9 @@ The users will be allowed to register (Sign up) and create a username and passwo
 <script src="./lib/jqBootstrapValidation.js.download"></script>
 <script src="./lib/contact_me_static.js.download"></script>
 <script src="./lib/freelancer.js.download"></script>
+<!-- <script src="./lib/Carousel.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 </html>
