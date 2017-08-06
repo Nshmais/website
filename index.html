@@ -66,7 +66,7 @@
 
 <header >
     <!-- nav bar -->
-    <div class="container" style="background-image:url(./images/woody.jpg)">
+    <div class="container coverphoto" style="background-image:url(./images/cover.jpg)">
 
     <!-- First Section  -->
         <div class="row" href="#page-top">
@@ -295,46 +295,54 @@
         </div>
         <!-- Skills row 1 -->
         <div class="row">
-            <div class="col-sm-3 text-center">
-                <img src="./images/chip.png" alt="Skill 1" class="skill">
-                <h6>Circuits</h6>
+            <div class="col-sm-3 text-center" >
+                <img src="./images/skill/language.jpg" alt="Skill 1" data-toggle="tooltip" title="click me!" class="skill" data-skillid="language">
+                <h6>Language</h6>
             </div>
-            <div class="col-sm-3 text-center">
-                <img lass="img-responsive" src="./images/m.png" alt="Skill 2" class="skill">
-                <h6>Programming</h6>
+            <div class="col-sm-3 text-center skill_2">
+                <img src="./images/skill/Framework.jpg" alt="Skill 2" data-toggle="tooltip" title="click me!" class="skill" data-skillid="framework">
+                <h6>Framework</h6>
             </div>
-            <div class="col-sm-3 text-center">
-                <img src="./images/web.png" alt="Skill 3" class="skill">
-                <h6>Web</h6>
+            <div class="col-sm-3 text-center skill_3">
+                <img src="./images/skill/programs.jpg" alt="Skill 3" data-toggle="tooltip" title="click me!" class="skill" data-skillid="programs">
+                <h6>Programs</h6>
             </div>
-            <div class="col-sm-3 text-center">
-                <img src="./images/pen.png" alt="Skill 4" class="skill">
+            <div class="col-sm-3 text-center skill_4">
+                <img src="./images/skill/design.jpg" alt="Skill 4" data-toggle="tooltip" title="click me!" class="skill" data-skillid="design">
                 <h6>Design</h6>
             </div>
         </div>
         <!-- Skills row 2 -->
         <div class="row">
-            <div class="col-sm-3 text-center">
-                <img src="./images/manage.png" alt=" Skill 5" class="skill">
+            <div class="col-sm-3 text-center skill_5">
+                <img src="./images/skill/manage.jpg" alt=" Skill 5" data-toggle="tooltip" title="click me!" class="skill" data-skillid="managment">
                 <h6>Project Management</h6>
             </div>
-            <div class="col-sm-3 text-center">
-                <img lass="img-responsive" src="./images/bell.png" alt="Skill 6" class="skill">
-                <h6>Customer Service</h6>
+            <div class="col-sm-3 text-center skill_6">
+                <img src="./images/skill/web.jpg" alt="Skill 6" data-toggle="tooltip" title="click me!" class="skill" data-skillid="web">
+                <h6>Web</h6>
             </div>
-            <div class="col-sm-3 text-center">
-                <img src="./images/shield.png" alt="Skill 7" class="skill">
+            <div class="col-sm-3 text-center skill_7">
+                <img src="./images/skill/computer-security.jpg" alt="Skill 7" data-toggle="tooltip" title="click me!" class="skill" data-skillid="security">
                 <h6>Computer Security</h6>
             </div>
-            <div class="col-sm-3 text-center">
-                <img src="./images/research.png" alt="Skill 8" class="skill">
+            <div class="col-sm-3 text-center skill_8">
+                <img src="./images/skill/research.jpg" alt="Skill 8" data-toggle="tooltip" title="click me!" class="skill" data-skillid="research">
                 <h6>Research</h6>
             </div>
         </div>
     </div>
+
+    <br>
+    <div class="row"></div>
+    <div id="more_skills" class="skill_window">
+        <center><p class="center"><b>My Skills</b></p></center>
+    </div>
+
+
 </section >
 
-<!-- White Section -->
+<!-- Education Section -->
 <section class="container" id="education" style="background-image:url(./images/apple.jpg)">
 
     <div class="row">
@@ -358,7 +366,7 @@
 
             <!-- Location -->
             <div class="footer-col col-md-4">
-                <h3>Location</h3>
+                <h3 data-toggle="tooltip" title="My Location!">Location</h3>
                 <p>
                 Fort Worth, TX 76140 <br>
                 (682)-472-6863
@@ -639,6 +647,7 @@ The users will be allowed to register (Sign up) and create a username and passwo
 <!-- <script src="./lib/Carousel.js"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="./lib/skills.js"></script>
 
 </body>
 </html>

@@ -529,3 +529,21 @@ footer .footer-below {
   height: auto;
 }
 /*Carosel Subtitle End*/
+
+
+.coverphoto {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.skill_window{
+    border: 2px solid #ffffff;
+    border-radius: 15px 50px 10px;
+    margin-left: 20%;
+    margin-right:20%;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
