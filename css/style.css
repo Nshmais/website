@@ -547,3 +547,12 @@ footer .footer-below {
     margin-right:20%;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
+
+
+
+.close_button {
+    /*margin: 20px;*/
+    margin-left: 30%;
+    position: absolute;
+    top: 0%;
+}

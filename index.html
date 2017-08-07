@@ -181,6 +181,7 @@
 </div>
 
 
+<!-- individual projects -->
     <div class="container">
         <div class="row">
         <h3>Projects</h3>
@@ -296,50 +297,42 @@
         <!-- Skills row 1 -->
         <div class="row">
             <div class="col-sm-3 text-center" >
-                <img src="./images/skill/language.jpg" alt="Skill 1" data-toggle="tooltip" title="click me!" class="skill" data-skillid="language">
+                <img src="./images/skill/language.jpg" alt="Skill 1" data-toggle="modal" data-target="#LANGUAGE" class="skill">
                 <h6>Language</h6>
             </div>
             <div class="col-sm-3 text-center skill_2">
-                <img src="./images/skill/Framework.jpg" alt="Skill 2" data-toggle="tooltip" title="click me!" class="skill" data-skillid="framework">
+                <img src="./images/skill/Framework.jpg" alt="Skill 2" data-toggle="modal" data-target="#FRAMEWORK" class="skill">
                 <h6>Framework</h6>
             </div>
             <div class="col-sm-3 text-center skill_3">
-                <img src="./images/skill/programs.jpg" alt="Skill 3" data-toggle="tooltip" title="click me!" class="skill" data-skillid="programs">
+                <img src="./images/skill/programs.jpg" alt="Skill 3" data-toggle="modal" data-target="#PROGRAMS" class="skill">
                 <h6>Programs</h6>
             </div>
             <div class="col-sm-3 text-center skill_4">
-                <img src="./images/skill/design.jpg" alt="Skill 4" data-toggle="tooltip" title="click me!" class="skill" data-skillid="design">
+                <img src="./images/skill/design.jpg" alt="Skill 4" data-toggle="modal" data-target="#DESIGN" class="skill">
                 <h6>Design</h6>
             </div>
         </div>
         <!-- Skills row 2 -->
         <div class="row">
             <div class="col-sm-3 text-center skill_5">
-                <img src="./images/skill/manage.jpg" alt=" Skill 5" data-toggle="tooltip" title="click me!" class="skill" data-skillid="managment">
+                <img src="./images/skill/manage.jpg" alt=" Skill 5" data-toggle="modal" data-target="#MANAGEMENT" class="skill">
                 <h6>Project Management</h6>
             </div>
             <div class="col-sm-3 text-center skill_6">
-                <img src="./images/skill/web.jpg" alt="Skill 6" data-toggle="tooltip" title="click me!" class="skill" data-skillid="web">
+                <img src="./images/skill/web.jpg" alt="Skill 6" data-toggle="modal" data-target="#WEB" class="skill">
                 <h6>Web</h6>
             </div>
             <div class="col-sm-3 text-center skill_7">
-                <img src="./images/skill/computer-security.jpg" alt="Skill 7" data-toggle="tooltip" title="click me!" class="skill" data-skillid="security">
+                <img src="./images/skill/computer-security.jpg" alt="Skill 7" data-toggle="modal" data-target="#SECURITY" class="skill">
                 <h6>Computer Security</h6>
             </div>
             <div class="col-sm-3 text-center skill_8">
-                <img src="./images/skill/research.jpg" alt="Skill 8" data-toggle="tooltip" title="click me!" class="skill" data-skillid="research">
+                <img src="./images/skill/research.jpg" alt="Skill 8" data-toggle="modal" data-target="#RESEARCH" class="skill">
                 <h6>Research</h6>
             </div>
         </div>
     </div>
-
-    <br>
-    <div class="row"></div>
-    <div id="more_skills" class="skill_window">
-        <center><p class="center">Please click on skill icon for more information!</p></center>
-    </div>
-
-
 </section >
 
 <!-- Education Section -->
@@ -437,41 +430,33 @@
 
 <!-- Projects -->
 <!-- DFW Sights and Landmarks Project  -->
-<div class="portfolio-modal modal fade" id="portfolioModal-1" tabindex="-1" role="dialog" aria-hidden="true">
-<div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-            <div class="rl"></div>
-        </div>
-    </div>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-                <h2>DFW Sights & Landmarks</h2>
-                <hr class="star-primary">
-                <img src="./images/mapGif.gif" class="img-responsive img-centered " alt="image-alt">
-                <p class="well">A single-page web application, built using the Knockout framework, that displays a Google Map of an area and various points of interest. Users can search all included landmarks and, when selected, additional information about a landmark is presented using SQL and Yahoo Weather API.</p>
-                <ul class="list-inline item-details well">
-                    <li>Documentation:
-                        <strong><a href="https://github.com/Nshmais/Fort-Worth-Map" target="_blank">Github</a></strong>
-                    </li>
-                    <li>Date:
-                        <strong>June 2017</strong>
-                    </li>
-                    <li>Service:
-                        <strong>Web Development</strong>
-                    </li>
-                    <li>Visit Web Page:
-                        <strong><a href="https://dfwmap.herokuapp.com/index.html" target="_blank">DFW Map</a></strong>
-                    </li>
-                </ul>
-                <div class="list-inline item-details well">
-                    <h3>requierments</h3>
-                    <li>Javascript, Knockout.js, Google Maps API, Yahoo Weather API, HTML, CSS, Bootstrap</li>
-                </div>
-                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+<div class="portfolio-modal modal fade" id="portfolioModal-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="modal-body">
+            <button class="btn btn-default close_button" data-dismiss="modal" onclick="Reload()"> Close</button>
+            <h2>DFW Sights & Landmarks</h2>
+            <hr class="star-primary">
+            <img src="./images/mapGif.gif" class="img-responsive img-centered " alt="image-alt">
+            <p class="well">A single-page web application, built using the Knockout framework, that displays a Google Map of an area and various points of interest. Users can search all included landmarks and, when selected, additional information about a landmark is presented using SQL and Yahoo Weather API.</p>
+            <ul class="list-inline item-details well">
+                <li>Documentation:
+                    <strong><a href="https://github.com/Nshmais/Fort-Worth-Map" target="_blank">Github</a></strong>
+                </li>
+                <li>Date:
+                    <strong>June 2017</strong>
+                </li>
+                <li>Service:
+                    <strong>Web Development</strong>
+                </li>
+                <li>Visit Web Page:
+                    <strong><a href="https://dfwmap.herokuapp.com/index.html" target="_blank">DFW Map</a></strong>
+                </li>
+            </ul>
+            <div class="list-inline item-details well">
+                <h3>requierments</h3>
+                <li>Javascript, Knockout.js, Google Maps API, Yahoo Weather API, HTML, CSS, Bootstrap</li>
             </div>
+            <button class="btn btn-default" data-dismiss="modal" onclick="Reload()"> Close</button>
         </div>
     </div>
 </div>
@@ -480,173 +465,296 @@
 
 
 <!-- Restaurants Menu Project -->
-<div class="portfolio-modal modal fade" id="portfolioModal-2" tabindex="-1" role="dialog" aria-hidden="true">
-<div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-            <div class="rl"></div>
+<div class="portfolio-modal modal fade" id="portfolioModal-2" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="modal-body">
+            <button class="btn btn-default close_button" data-dismiss="modal" onclick="Reload()"> Close</button>
+            <h2>Restaurants menu</h2>
+            <hr class="star-primary">
+            <img src="./images/restaurant.png" class="img-responsive img-centered border" alt="Resturants">
+            <p class="well">Web application that provides a list of restaurants with a variety of menus as well as provide a user registration and authentication system. Registered users will have the ability to post, edit and delete their restaurants and menu items.</p>
+            <ul class="list-inline item-details">
+                <li>Documentation:
+                    <strong><a href="https://github.com/Nshmais/Restaurants_Catalog" target="_blank">Github</a></strong>
+                </li>
+                <li>Date:
+                    <strong>April 2017</strong>
+                </li>
+                <li>Visit Web Page:
+                    <strong> <a href="http://ec2-13-59-231-249.us-east-2.compute.amazonaws.com" target="_blank">Restaurants Catalog</a></strong>
+                </li>
+            </ul>
+            <button class="btn btn-default" data-dismiss="modal" onclick="Reload()"> Close</button>
         </div>
     </div>
-<div class="container">
-<div class="row">
-<div class="col-lg-8 col-lg-offset-2">
-<div class="modal-body">
-<h2>Restaurants menu</h2>
-<hr class="star-primary">
-<img src="./images/restaurant.png" class="img-responsive img-centered border" alt="Resturants">
-                <p class="well">Web application that provides a list of restaurants with a variety of menus as well as provide a user registration and authentication system. Registered users will have the ability to post, edit and delete their restaurants and menu items.</p>
-<ul class="list-inline item-details">
-<li>Documentation:
-<strong><a href="https://github.com/Nshmais/Restaurants_Catalog" target="_blank">Github</a></strong>
-</li>
-<li>Date:
-<strong>April 2017</strong>
-</li>
-<li>Visit Web Page:
-<strong> <a href="http://ec2-13-59-231-249.us-east-2.compute.amazonaws.com" target="_blank">Restaurants Catalog</a></strong>
-</li>
-</ul>
-<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
+
 
 <!-- Multi User Blog Project -->
-<div class="portfolio-modal modal fade" id="portfolioModal-3" tabindex="-1" role="dialog" aria-hidden="true">
-<div class="modal-content">
-<div class="close-modal" data-dismiss="modal">
-<div class="lr">
-<div class="rl">
-</div>
-</div>
-</div>
-<div class="container">
-<div class="row">
-<div class="col-lg-8 col-lg-offset-2">
-<div class="modal-body">
-<h2>Multi User Blog</h2>
-<hr class="star-primary">
-<img src="./images/multiUserBlog.gif" class="img-responsive img-centered border" alt="multiUserBlog">
-<p class="well">The multi user Blog is a website that will allow users to create their own Blogs and post them for others to share and spark conversation and collaboration between users.
-
-The users will be allowed to register (Sign up) and create a username and password to save their blogs. then the can login and acsess all his Blogs at any times he/she pleases.</p>
-<ul class="list-inline item-details well">
-<li>Documentation:
-<strong><a href="https://github.com/Nshmais/Multi_User_Blog" target="_blank">Github</a></strong>
-</li>
-<li>Date:
-<strong>March 2017</strong>
-</li>
-<li>Visit Web Page:
-<strong><a href="https://multi-user-blog-169803.appspot.com/" target="_blank">Multi User Blog</a></strong>
-</li>
-</ul>
-<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-</div>
-</div>
-</div>
-</div>
-</div>
+<div class="portfolio-modal modal fade" id="portfolioModal-3" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="modal-body">
+            <button class="btn btn-default close_button" data-dismiss="modal" onclick="Reload()"> Close</button>
+            <h2>Multi User Blog</h2>
+            <hr class="star-primary">
+            <img src="./images/multiUserBlog.gif" class="img-responsive img-centered border" alt="multiUserBlog">
+            <p class="well">The multi user Blog is a website that will allow users to create their own Blogs and post them for others to share and spark conversation and collaboration between users.</p>
+            <p>The users will be allowed to register (Sign up) and create a username and password to save their blogs. then the can login and acsess all his Blogs at any times he/she pleases.</p>
+            <ul class="list-inline item-details well">
+                <li>Documentation:
+                    <strong><a href="https://github.com/Nshmais/Multi_User_Blog" target="_blank">Github</a></strong>
+                </li>
+                <li>Date:
+                    <strong>March 2017</strong>
+                </li>
+                <li>Visit Web Page:
+                    <strong><a href="https://multi-user-blog-169803.appspot.com/" target="_blank">Multi User Blog</a></strong>
+                </li>
+            </ul>
+            <button class="btn btn-default" data-dismiss="modal" onclick="Reload()"> Close</button>
+        </div>
+    </div>
 </div>
 
 
 <!-- Smart Car Project -->
-<div class="portfolio-modal modal fade" id="portfolioModal-4" tabindex="-1" role="dialog" aria-hidden="true">
-<div class="modal-content">
-<div class="close-modal" data-dismiss="modal">
-<div class="lr">
-<div class="rl">
-</div>
-</div>
-</div>
-<div class="container">
-<div class="row">
-<div class="col-lg-8 col-lg-offset-2">
-<div class="modal-body">
-<h2>Smart Car</h2>
-<hr class="star-primary">
-<img src="./images/Smart_car.jpg" class="img-responsive img-centered border" alt="Car">
-<p class="well">Unmanned smart self-navigating vehicle equipped with ultrasonic sensors to map the traveling path and safely navigate through obstacles, detect optimal path recognition using reward algorithm to navigate optimal path. (C).</p>
+<div class="portfolio-modal modal fade" id="portfolioModal-4">
+    <div class="modal-content">
+        <div class="modal-body">
+            <button class="btn btn-default close_button" data-dismiss="modal"> Close</button>
+            <h2>Smart Car</h2>
+            <hr class="star-primary">
+            <img src="./images/Smart_car.jpg" class="img-responsive img-centered border" alt="Car">
+            <p class="well">Unmanned smart self-navigating vehicle equipped with ultrasonic sensors to map the traveling path and safely navigate through obstacles, detect optimal path recognition using reward algorithm to navigate optimal path. (C).</p>
 
-   <div class="row text-center">
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/ygR1z7xQZBs" frameborder="3" allowfullscreen></iframe>
-   </div>
-
-<ul class="list-inline item-details">
-<li>Documentation:
-<strong><a href="https://github.com/zdeveloper/Hardware-Challenge" target="_blank">Github</a></strong>
-</li>
-<li>Date:
-<strong>March 2017</strong>
-</li>
-<li>Partner:
-<strong><a href="https://github.com/zdeveloper" target="_blank">Zedd Shmais</a></strong>
-</li>
-</ul>
-<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<!-- Wattmeter Project -->
-<div class="portfolio-modal modal fade" id="portfolioModal-5" tabindex="-1" role="dialog" aria-hidden="true">
-<div class="modal-content">
-<div class="close-modal" data-dismiss="modal">
-<div class="lr">
-<div class="rl">
-</div>
-</div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-                <h2>Wattmeter</h2>
-                <hr class="star-primary">
-                <img src="./images/wattmeter.png" class="img-responsive img-centered border" alt="image-alt">
-                <p class="well">Watt Meter device (measure AC current, voltage, frequency, and total power) using Arduino microcontroller and display the result via Bluetooth to a cellphone android application (senior design team leader).</p>
-
-                <div class="row text-center">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YT5nKNzq8yo" frameborder="3" allowfullscreen></iframe>
-                </div>
-                <ul class="list-inline item-details well">
-                    <li>Client:
-                        <strong>UTA</strong>
-                    </li>
-                    <li>Date:
-                        <strong>March 2016</strong>
-                    </li>
-                    <li>Service:
-                        <strong>Software/Hardware Development</strong>
-                    </li>
-                </ul>
-                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+            <div class="row text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ygR1z7xQZBs" frameborder="3" allowfullscreen></iframe>
             </div>
+
+            <ul class="list-inline item-details">
+                <li>Documentation:
+                    <strong><a href="https://github.com/zdeveloper/Hardware-Challenge" target="_blank">Github</a></strong>
+                </li>
+                <li>Date:
+                    <strong>March 2017</strong>
+                </li>
+                <li>Partner:
+                    <strong><a href="https://github.com/zdeveloper" target="_blank">Zedd Shmais</a></strong>
+                </li>
+            </ul>
+            <button class="btn btn-default" data-dismiss="modal"> Close</button>
         </div>
     </div>
 </div>
+
+
+<!-- Wattmeter Project -->
+<div class="portfolio-modal modal fade" id="portfolioModal-5" aria-hidden="true">
+    <div class="modal-content">
+        <div class="modal-body">
+            <button class="btn btn-default close_button" data-dismiss="modal" onclick="Reload()"> Close</button>
+            <h2>Wattmeter</h2>
+            <hr class="star-primary">
+            <img src="./images/wattmeter.png" class="img-responsive img-centered border" alt="image-alt">
+            <p class="well">Watt Meter device (measure AC current, voltage, frequency, and total power) using Arduino microcontroller and display the result via Bluetooth to a cellphone android application (senior design team leader).</p>
+            <div class="row text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YT5nKNzq8yo" frameborder="3" allowfullscreen></iframe>
+            </div>
+            <ul class="list-inline item-details well">
+                <li>Client:
+                    <strong>UTA</strong>
+                </li>
+                <li>Date:
+                    <strong>March 2016</strong>
+                </li>
+                <li>Service:
+                    <strong>Software/Hardware Development</strong>
+                </li>
+            </ul>
+            <button class="btn btn-default" data-dismiss="modal" onclick="Reload()"> Close</button>
+        </div>
+    </div>
 </div>
+
+
+
+
+
+
+
+
+<!-- Skills Modal -->
+<div class="container">
+  <!-- LANGUAGE -->
+  <div class="modal fade" id="LANGUAGE" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Languages</h4>
+        </div>
+        <div class="modal-body">
+          <p>Html, CSS, JavaScript, Python, SQL, C, jQuery.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-default" data-dismiss="modal" onclick="Reload()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- FRAMEWORK -->
+  <div class="modal fade" id="FRAMEWORK" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">FRAMEWORK</h4>
+        </div>
+        <div class="modal-body">
+          <p>Bootstrap, Flask, Knockout.js (MVVM), jinja2.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="Reload()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- PROGRAMS -->
+  <div class="modal fade" id="PROGRAMS" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+             <h4 class="modal-title">PROGRAMS</h4>
+        </div>
+        <div class="modal-body">
+          <p>MPLAB X, MATLAB, PSpice, Multisim, MIT app inventor, 3D Solidworks.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="Reload()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- DESIGN -->
+  <div class="modal fade" id="DESIGN" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">DESIGN</h4>
+        </div>
+        <div class="modal-body">
+          <p>Linux, Git/GitHub, Arduino, PIC Microcontrollers.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="Reload()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- PROJECT MANAGEMENT -->
+  <div class="modal fade" id="MANAGEMENT" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+             <h4 class="modal-title">PROJECT MANAGEMENT</h4>
+        </div>
+        <div class="modal-body">
+            <p>no content in this time</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="Reload()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- WEB -->
+  <div class="modal fade" id="WEB" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">WEB</h4>
+        </div>
+        <div class="modal-body">
+          <p>no content in this time.</p>
+        </div>
+        <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal" onclick="Reload()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- COMPUTER SECURITY -->
+  <div class="modal fade" id="SECURITY" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">COMPUTER SECURITY</h4>
+        </div>
+        <div class="modal-body">
+          <p>OAuth, Password-salt.</p>
+        </div>
+        <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal" onclick="Reload()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- RESEARCH-->
+  <div class="modal fade" id="RESEARCH" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+             <h4 class="modal-title">RESEARCH</h4>
+        </div>
+        <div class="modal-body">
+             <p>no content in this time.</p>
+        </div>
+        <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal" onclick="Reload()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
+
+
 
 
 
 <script src="./lib/jquery-1.11.0.js.download"></script>
 <script src="./lib/bootstrap.min.js.download"></script>
 <script src="./lib/jquery.easing.min.js.download"></script>
-<script src="./lib/classie.js.download"></script>
-<script src="./lib/cbpAnimatedHeader.js.download"></script>
+<!-- <script src="./lib/classie.js.download"></script> -->
+<!-- <script src="./lib/cbpAnimatedHeader.js.download"></script> -->
 <script src="./lib/jqBootstrapValidation.js.download"></script>
+
+<!-- top Content bar -->
 <script src="./lib/contact_me_static.js.download"></script>
 <script src="./lib/freelancer.js.download"></script>
+
 <!-- <script src="./lib/Carousel.js"></script> -->
+
+<!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Bootstraq -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+<!-- Refresh -->
 <script src="./lib/skills.js"></script>
 
 </body>
