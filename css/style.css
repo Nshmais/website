@@ -475,14 +475,6 @@ footer .footer-below {
     height: 180px;
 }
 
-/*
-.animation{
-    position: relative;
-    -webkit-animation: mymove 2s 1; /* Chrome, Safari, Opera
-}*/
-
-
-
 /*Carosel*/
 .center_img{
     display: block;
@@ -539,20 +531,9 @@ footer .footer-below {
     background-size: cover;
 }
 
-
-.skill_window{
-    border: 2px solid #ffffff;
-    border-radius: 15px 50px 10px;
-    margin-left: 20%;
-    margin-right:20%;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-
-
-
 .close_button {
-    /*margin: 20px;*/
     margin-left: 30%;
     position: absolute;
     top: 0%;
 }
+

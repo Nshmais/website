@@ -23,6 +23,7 @@
 
 <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mouse.css">
     <link href="./css/css" rel="stylesheet" type="text/css">
     <link href="./css/css(1)" rel="stylesheet" type="text/css">
 
@@ -78,6 +79,10 @@
                     <span class="name">Noah Shmais</span>
                     <!-- <hr class="star-light"> -->
                     <span class="skills">Full Stack Web Developer/ Electrical Engineer - UI/UX Designer</span>
+                    <br><br><br><br><br><br>
+                    <div class="mouse">
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -113,9 +118,6 @@
                 <a href="#portfolioModal-1" class="portfolio-link" data-toggle="modal">
                     <img src="./images/map.png" alt="map" class="center_img image">
                 </a>
-            <!--<div class="carousel-caption">
-                    <p class="color">DFW SIGHTS & LANDMARKS</p>
-                </div> -->
                 <div class="overlay center_img">
                     <a href="#portfolioModal-1" class="portfolio-link" data-toggle="modal">
                         <div class="text">Please Click Here For More Info On <b>The DFW Sights & Landmarks</b> Project</div>
@@ -565,11 +567,13 @@
 
 <!-- Wattmeter Project -->
 <div class="portfolio-modal modal fade" id="portfolioModal-5" aria-hidden="true">
-    <div class="modal-content">
-        <div class="modal-body">
+    <div class="modal-content modal-dialog modal-lg">
+        <div class="modal-header">
             <button class="btn btn-default close_button" data-dismiss="modal"> Close</button>
             <h2>Wattmeter</h2>
             <hr class="star-primary">
+        </div>
+        <div class="modal-body">
             <img src="./images/wattmeter.png" class="img-responsive img-centered border" alt="image-alt">
             <p class="well">Watt Meter device (measure AC current, voltage, frequency, and total power) using Arduino microcontroller and display the result via Bluetooth to a cellphone android application (senior design team leader).</p>
             <div class="row text-center">
@@ -586,6 +590,8 @@
                     <strong>Software/Hardware Development</strong>
                 </li>
             </ul>
+        </div>
+        <div class="modal-footer">
             <button class="btn btn-default" data-dismiss="modal"> Close</button>
         </div>
     </div>
@@ -610,7 +616,7 @@
   <!-- LANGUAGE -->
   <div class="modal fade" id="LANGUAGE" role="dialog">
     <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+      <div class="modal-content font">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Languages</h4>
@@ -772,9 +778,6 @@
 
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<!-- Bootstraq -->
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 
 <!-- Refresh -->
 <script src="./lib/skills.js"></script>
