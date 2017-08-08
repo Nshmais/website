@@ -398,7 +398,7 @@ footer .footer-below {
     outline: 0;
 }
 
-.portfolio-modal .modal-content {
+/*.portfolio-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
     border: 0;
@@ -407,7 +407,7 @@ footer .footer-below {
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
-}
+}*/
 
 .portfolio-modal .modal-content h2 {
     margin: 0;
@@ -531,9 +531,28 @@ footer .footer-below {
     background-size: cover;
 }
 
-.close_button {
+/*.close_button {
     margin-left: 30%;
     position: absolute;
     top: 0%;
+}*/
+
+
+
+.close{
+    max-height: 10px;
 }
+
+.close_sign{
+    margin-right:3px;
+    margin-left:3px;
+    margin-top:3px;
+    float:right;
+}
+
+.ribbon{
+    height:33px;
+    background-color: blue;
+}
+
 
