@@ -531,14 +531,6 @@ footer .footer-below {
     background-size: cover;
 }
 
-/*.close_button {
-    margin-left: 30%;
-    position: absolute;
-    top: 0%;
-}*/
-
-
-
 .close{
     max-height: 10px;
 }
@@ -552,7 +544,7 @@ footer .footer-below {
 
 .ribbon{
     height:33px;
-    background-color: blue;
+    background-color: rgb(9, 76, 140);
 }
 
 
